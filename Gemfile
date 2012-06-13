@@ -34,3 +34,8 @@ group :test do
   gem 'rb-fsevent', '0.4.3.1', :require => false
   gem 'growl', '1.0.3'
 end
+
+group :production, :staging do
+  gem 'pg'
+  gem 'thin'
+end
